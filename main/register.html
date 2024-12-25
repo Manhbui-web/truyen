@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tài Khoản</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background: #005bb5;
+        }
+        
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #0073e6;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Đăng Ký</h2>
+        <form action="register.php" method="POST">
+            <label for="username">Tên người dùng</label>
+            <input type="text" id="username" name="username" placeholder="Nhập tên người dùng" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email" required>
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+
+            <button type="submit">Đăng Ký</button>
+        </form>
+        <a href="login.html">Đã có tài khoản? Đăng nhập</a>
+    </div>
+</body>
+
+</html>

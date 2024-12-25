@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px;
+}
+
+.story-list {
+    display: flex;
+    gap: 20px;
+}
+
+.story-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.story-item img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+
+input,
+button {
+    padding: 10px;
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truyen Hay Moi ngayngay - Trang Chủ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        /* Header */
+        
+        header {
+            background: #bb92d6;
+            color: white;
+            padding: 10px 20px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Search Bar */
+        
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .search-bar input {
+            padding: 5px;
+            width: 250px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+        
+        .search-bar button {
+            padding: 5px 10px;
+            background: #005bb5;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        
+        .search-bar button:hover {
+            background: #004494;
+        }
+        /* Banner */
+        
+        .banner {
+            text-align: center;
+            padding: 20px;
+            background: #f0f0f0;
+            margin-bottom: 20px;
+        }
+        
+        .banner h2 {
+            margin: 10px 0;
+            color: #7407f1;
+        }
+        
+        .banner p {
+            color: #fa0477;
+        }
+        /* Grid Layout */
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+        
+        .grid-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .grid-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .grid-item h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        /* Footer */
+        
+        footer {
+            background: #363636;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Truyện Hay Mỗi Ngày</h1>
+                </a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm truyện...">
+                <button>Tìm</button>
+            </div>
+            <div>
+                <a href="login.html">Đăng Nhập</a>
+                <a href="register.html">Đăng Ký</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Chào mừng đến với truyện hay mỗi ngày</h2>
+        <p>Đọc truyện tranh online miễn phí với nhiều thể loại hấp dẫn!</p>
+    </section>
+
+    <!-- Grid Truyện -->
+
+    <section class="grid">
+        <!-- Truyện 1 -->
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="mahoang.png" alt="Truyện 1">
+                <h3>Đại Quản Gia là ma hoàng </h3>
+            </a>
+        </div>
+        <!-- Truyện 2 -->
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="phandien.png" alt="trời sinh ta đã là nhân vật phản diện">
+                <h3>trời sinh ta đã là nhân vật phản diện</h3>
+            </a>
+        </div>
+
+        <!-- Truyện 3 -->
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="arya.png" alt="arya bàn bên thỉnh thoảng lại trêu ghẹo tôi bằng tiếng nga">
+                <h3>arya bàn bên thỉnh thoảng lại trêu ghẹo tôi bằng tiếng nga</h3>
+            </a>
+        </div>
+
+        <!-- Truyện 4 -->
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="voluyendp.png" alt="võ luyện đỉnh phong">
+                <h3>võ luyện đỉnh phong</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="bachluyentt.png" alt="bách luyện thành thần">
+                <h3>bách luyện thành thần</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="tiennghich.png" alt="tiên nghịch">
+                <h3>tiên nghịch</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="hoangde.png" alt="hoàng đế là nữ bị ta phát hiện rồi">
+                <h3>hoàng đế là nữ bị ta phát hiện rồi</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="thiendao.png" alt="thiên đạo này cũng không ngốc lắm">
+                <h3>thiên đạo này cũng không ngốc lắm</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="tienvodt.png" alt="tiên võ đế tôn">
+                <h3>tiên võ đế tôn</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="thanhthe.png" alt="bắt đầu đánh dấu hoang cổ thánh thể">
+                <h3>bắt đầu đánh dấu hoang cổ thánh thể</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="haucung.png" alt="làm sao để chạy trốn dàn hậu cung">
+                <h3>làm sao để chạy trốn dàn hậu cung</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="daupha.png" alt="đấu phá thương khung">
+                <h3>đấu phá thương khung</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="tieuthu.png" alt="bạn gái tôi là 1 đại tiểu thư xấu xa">
+                <h3>bạn gái tôi là 1 đại tiểu thư xấu xa</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="bangaiz.png" alt="bạn gái zombie của tôi">
+                <h3>bạn gái zombie của tôi</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="vannguoi.png" alt="người trên vạn người">
+                <h3>người trên vạn người</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="cuahang.png" alt="cửa hàng sủng thú siêu thần">
+                <h3>cửa hàng sủng thú siêu thần</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="cuonggia.png" alt="cường giả đến từ trại tâm thần">
+                <h3>cường giả đến từ trại tâm thần</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="sontrai.png" alt="ta có một sơn trại">
+                <h3>ta có một sơn trại</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="toancaub.png" alt="toàn cầu băng phong ta chế tạo phòng an toàn tại tận thế">
+                <h3>toàn cầu băng phong ta chế tạo phòng an toàn tại tận thế</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="linhkhi.png" alt="ta nắm giữ linh khí thức tỉnh">
+                <h3>ta nắm giữ linh khí thức tỉnh</h3>
+            </a>
+        </div>
+        <div class="grid-item">
+            <a href="story.html">
+                <img src="thanhnu.png" alt="thánh nữ xin hãy dừng ngay những trò quái đản của cô đi">
+                <h3>thánh nữ xin hãy dừng ngay những trò quái đản của cô đi</h3>
+            </a>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; bản quyền@buimanh</p>
+    </footer>
+</body>
+
+</html>
